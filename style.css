@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    perspective: 500px;
+    overflow: hidden;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 30px;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
+    background-color: #f3f3f3;
+}
+#background i{
+    cursor: pointer;
+}
+#headings{
+    margin-top: 100px;
+    text-align: center;
+}
+#headings h1{
+    font-size: 50px;
+}
+#headins p{
+    opacity: 1;
+    font-size: 12px;
+}
+#elements{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 180px;
+    margin-top: 120px;
+}
+#elements .element{
+    width: 17%;
+    height: 300px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.867);
+    border-radius: 12px;
+}
+#elements #pic{
+    width: 100%;
+    height: 70%;
+    background-image: url(https://media.istockphoto.com/photos/adorable-blooming-pansies-in-summer-garden-on-natural-background-picture-id1385500592?b=1&k=20&m=1385500592&s=170667a&w=0&h=29IyLpm6-P5Z_m7puwdL86r_REnaNfQzh4RTX7QGQl0=);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+#elements .element:nth-child(2) #pic{
+    background-image: url(https://media.istockphoto.com/photos/white-peony-flower-picture-id1363837547?b=1&k=20&m=1363837547&s=170667a&w=0&h=JJJZ1LhPo5M7evZ_sWUE9wfIP0nCMn4tfERrTPLwhag=);
+
+}
+#elements .element:nth-child(3) #pic{
+    background-image: url(https://media.istockphoto.com/photos/white-peony-flower-picture-id1363837547?b=1&k=20&m=1363837547&s=170667a&w=0&h=JJJZ1LhPo5M7evZ_sWUE9wfIP0nCMn4tfERrTPLwhag=);
+
+}
+#elements .element:nth-child(4) #pic{
+    background-image: url(https://media.istockphoto.com/photos/white-peony-flower-picture-id1363837547?b=1&k=20&m=1363837547&s=170667a&w=0&h=JJJZ1LhPo5M7evZ_sWUE9wfIP0nCMn4tfERrTPLwhag=);
+
+}
+
+
+.element .content{
+    padding: 20px 10px
+}
+.element .content h3{
+    font-size: 19px;
+    color: #505050;
+}
+.element .content span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+#sidenav{
+    display: flex;
+    position: absolute;
+    top:50%;
+    left: -10%;
+    transition: all ease-in-out .5s;
+    transform: translate(0,-50%);
+    width: 200px;
+    height: 80%;
+    background-color: #f3f3f3;
+}
+#sidenav i{
+    color: #777;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+#sidenav h3{
+    margin-bottom: 50px;
+}
+#sidenav a:hover{
+    cursor: pointer;
+    color: black;
+}
+#sidenav a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #777;
+}
